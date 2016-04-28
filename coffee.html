@@ -49,7 +49,7 @@
 
     var myImage = document.getElementById("coffee-image"); 
 
-    var oldSrc = myImage.getAttribute("src");
+    // var oldSrc = myImage.getAttribute("src");
 
     myImage.setAttribute("src", "static/coffee_beans.jpg");
 
@@ -58,8 +58,13 @@
     // Change coffee beans image upon clicking it
 
     var makeCoffee = function (evt) {
-    myImage.setAttribute("src", "static/coffee_mug.jpg");
-    };
+        setTimeout(myImage.setAttribute("src", "static/coffee_machine.jpg"), 500);
+         };
+
+    myImage.setAttribute("src", "static/coffee_beans.jpg"); 
+    // };)   
+
+    //     
 
     myImage.addEventListener('click', makeCoffee);
 
