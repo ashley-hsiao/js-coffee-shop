@@ -55,6 +55,14 @@
 
     var myRevenueMessage = document.getElementById("revenue");
 
+    // Change coffee beans image upon clicking it
+
+    var makeCoffee = function (evt) {
+    myImage.setAttribute("src", "static/coffee_mug.jpg");
+    };
+
+    myImage.addEventListener('click', makeCoffee);
+
     // use this JavaScript object in further study step
 
     var prices = {
